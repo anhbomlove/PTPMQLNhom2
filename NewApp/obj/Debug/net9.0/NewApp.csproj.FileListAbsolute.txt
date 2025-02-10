@@ -1,0 +1,15 @@
+F:\hoc tap\New folder\NewApp\bin\Debug\net9.0\NewApp.exe
+F:\hoc tap\New folder\NewApp\bin\Debug\net9.0\NewApp.deps.json
+F:\hoc tap\New folder\NewApp\bin\Debug\net9.0\NewApp.runtimeconfig.json
+F:\hoc tap\New folder\NewApp\bin\Debug\net9.0\NewApp.dll
+F:\hoc tap\New folder\NewApp\bin\Debug\net9.0\NewApp.pdb
+F:\hoc tap\New folder\NewApp\obj\Debug\net9.0\NewApp.GeneratedMSBuildEditorConfig.editorconfig
+F:\hoc tap\New folder\NewApp\obj\Debug\net9.0\NewApp.AssemblyInfoInputs.cache
+F:\hoc tap\New folder\NewApp\obj\Debug\net9.0\NewApp.AssemblyInfo.cs
+F:\hoc tap\New folder\NewApp\obj\Debug\net9.0\NewApp.csproj.CoreCompileInputs.cache
+F:\hoc tap\New folder\NewApp\obj\Debug\net9.0\NewApp.sourcelink.json
+F:\hoc tap\New folder\NewApp\obj\Debug\net9.0\NewApp.dll
+F:\hoc tap\New folder\NewApp\obj\Debug\net9.0\refint\NewApp.dll
+F:\hoc tap\New folder\NewApp\obj\Debug\net9.0\NewApp.pdb
+F:\hoc tap\New folder\NewApp\obj\Debug\net9.0\NewApp.genruntimeconfig.cache
+F:\hoc tap\New folder\NewApp\obj\Debug\net9.0\ref\NewApp.dll
