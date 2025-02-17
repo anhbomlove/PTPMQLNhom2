@@ -13,7 +13,7 @@ namespace MvcMovie.Controllers
 
         public string Welcome()
         {
-            return "Thang tam ngu";
+            return "Hello";
         }
     }
 }
