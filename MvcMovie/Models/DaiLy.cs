@@ -11,5 +11,4 @@ public class DaiLy : HeThongPhanPhoi
     public string? DiaChi   {get; set; }
     public string? NguoiDaiDien  {get; set; }
     public string? DienThoai  {get; set; }
-    public string? MaHTPP  {get; set; }
 }

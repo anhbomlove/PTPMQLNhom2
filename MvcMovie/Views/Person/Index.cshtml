@@ -1,33 +1,42 @@
+@model IEnumerable<MvcMovie.Models.Person>
+
 @{
-    ViewData["Title"] = "Person Page";
+    ViewData["Title"] = "Index";
 }
-<form asp-action="Index">
-    <h1>Tính BMI</h1>
-    <label for="">Nhập Chiều cao (M):</label>
-    <input type="text" name="Chieucao">
-    <label for="">Nhập Cân nặng (Kg):</label>
-    <input type="text" name="Cannang">
-    <input type="submit" value="Gửi dữ liệu">
-</form>
-<h1>@ViewBag.Message1</h1>
-<h1>@ViewBag.BMI</h1>
-<form asp-action="Index">
-    <h1>Tính Điểm A B C :</h1>
-    <label for="">Nhập Điểm A:</label>
-    <input type="text" name="DiemA">
-    <label for="">Nhập Điểm B:</label>
-    <input type="text" name="DiemB">
-    <label for="">Nhập Điểm C:</label>
-    <input type="text" name="DiemC">
-    <input type="submit" value="Gửi dữ liệu">
-</form>
-<h1>@ViewBag.DiemTB</h1>
-<form asp-action="Index">
-    <h1>Tính Hóa Đơn :</h1>
-    <label for="">Nhập Số Lượng:</label>
-    <input type="text" name="Soluong">
-    <label for="">Nhập Đơn Giá(Nghìn Đồng):</label>
-    <input type="text" name="Dongia">
-    <input type="submit" value="Gửi dữ liệu">
-</form>
-<h1>@ViewBag.Hoadon</h1> A 
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FullName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.PersonId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.PersonId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.PersonId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

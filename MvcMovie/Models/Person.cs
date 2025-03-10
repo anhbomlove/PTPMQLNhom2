@@ -1,13 +1,15 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MvcMovie.Models;
-
-public class Person
+namespace MvcMovie.Models
 {
-    public string? PersonId  {get; set; }
+    [Table("Persons")]
+    public class Person
+    {
+        [Key]
+        public string? PersonId { get; set; }
+        public string? FullName { get; set; }
+        public string? Address { get; set; }
 
-    public string? FullName {get; set; }
-
-    public string? Address {get; set; }
-
+    }
 }

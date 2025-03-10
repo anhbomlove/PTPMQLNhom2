@@ -1,46 +1,133 @@
-
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using MvcMovie.Data;
+using MvcMovie.Models;
 
-namespace MvcMovie.Controllers{
+namespace MvcMovie.Controllers
+{
     public class PersonController : Controller
-    { 
-        // GET: /Person/
-        public IActionResult Index()
+    {
+        private readonly ApplicationDbContext _context;
+
+        public PersonController(ApplicationDbContext context) =>
+            _context = context;
+
+        public async Task<IActionResult> Index()
+        {
+            var model = await _context.Person.ToListAsync();
+            return View(model);
+        }
+
+        public IActionResult Create()
         {
             return View();
-        } 
-        // GET: /HelloWorld/Welcome/
+        }
+
+
         [HttpPost]
-        public IActionResult Index(float Chieucao,float Cannang,float DiemA ,float DiemB,float DiemC,float Soluong,float Dongia)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("PersonId,FullName,Address")] Person person)
         {
-        string strOutput = "Chiều cao :"+ Chieucao + " Cân nặng: "+ Cannang;
-        float BMI = Cannang /(Chieucao*Chieucao);
-        string strBMI="";
-        if(BMI < 18.5){
-            strBMI = "BMI là :"+ BMI + " Nhẹ cân ";
-        }else if(BMI<=22.9 && BMI >=18.5){
-            strBMI = "BMI là :"+ BMI + " Cân nặng bình thường ";
-        }else if(BMI >= 23){
-            strBMI = "BMI là :"+ BMI + " Thừa cân ";
-        }else if(BMI<=29 && BMI >=25){
-            strBMI = "BMI là :"+ BMI + " Béo phì độ I ";
-        }else if(BMI >= 30){
-            strBMI = "BMI là :"+ BMI + " Béo phì độ II ";
-        }else if(BMI >= 40){
-            strBMI = "BMI là :"+ BMI + " Béo phì độ III ";
+            if (ModelState.IsValid)
+            {
+                _context.Add(person);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(person);
         }
-        float DiemTB = (float)(DiemC *0.1+DiemB*0.3+DiemA*0.6);
-        float Hoadon = Soluong*Dongia;
-        string inHoadon = "Hóa đơn là :"+ Hoadon;
-        ViewBag.Message1 = strOutput;
-        ViewBag.BMI = strBMI;
-        ViewBag.DiemTB = DiemTB;
-        ViewBag.Hoadon = inHoadon;
-        return View();
-        }
-        public string Welcome()
+        public async Task<IActionResult> Edit(string id)
         {
-            return "hello";
+            if (id == null || _context.Person == null)
+            {
+                return NotFound();
+            }
+
+            var person = await _context.Person.FindAsync(id);
+            if (person == null)
+            {
+                return NotFound();
+            }
+            return View(person);
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(string id, [Bind("PersonId,FullName,Address")] Person person)
+        {
+            if (id != person.PersonId)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(person);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!PersonExists(person.PersonId))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(person);
+        }
+
+
+
+
+
+        public async Task<IActionResult> Delete(string id)
+        {
+            if (id == null || _context.Person == null)
+            {
+                return NotFound();
+            }
+
+            var person = await _context.Person
+                .FirstOrDefaultAsync(m => m.PersonId == id);
+            if (person == null)
+            {
+                return NotFound();
+            }
+
+            return View(person);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(string id)
+        {
+            if (_context.Person == null)
+            {
+                return Problem("Entity set 'ApplicationDbContext.Person' is null.");
+            }
+
+            var person = await _context.Person.FindAsync(id);
+            if (person != null)
+            {
+                _context.Person.Remove(person);
+            }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+
+        private bool PersonExists(string id)
+        {
+            return (_context.Person?.Any(e => e.PersonId == id)).GetValueOrDefault();
+        }
+
     }
 }
