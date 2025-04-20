@@ -17,69 +17,69 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MvcMovie
 build_property.RootNamespace = MvcMovie
-build_property.ProjectDir = F:\Hoctap\Newfolder\MvcMovie\
+build_property.ProjectDir = F:\Hoctap\DemoMVC\MvcMovie\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = F:\Hoctap\Newfolder\MvcMovie
+build_property.MSBuildProjectDirectory = F:\Hoctap\DemoMVC\MvcMovie
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[F:/Hoctap/Newfolder/MvcMovie/Views/Employee/Index.cshtml]
+[F:/Hoctap/DemoMVC/MvcMovie/Views/Employee/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Hoctap/Newfolder/MvcMovie/Views/HelloWorld/Index.cshtml]
+[F:/Hoctap/DemoMVC/MvcMovie/Views/HelloWorld/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9Xb3JsZFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Hoctap/Newfolder/MvcMovie/Views/Home/Index.cshtml]
+[F:/Hoctap/DemoMVC/MvcMovie/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Hoctap/Newfolder/MvcMovie/Views/Home/Privacy.cshtml]
+[F:/Hoctap/DemoMVC/MvcMovie/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Hoctap/Newfolder/MvcMovie/Views/Mas/Index.cshtml]
+[F:/Hoctap/DemoMVC/MvcMovie/Views/Mas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Hoctap/Newfolder/MvcMovie/Views/Person/Create.cshtml]
+[F:/Hoctap/DemoMVC/MvcMovie/Views/Person/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Hoctap/Newfolder/MvcMovie/Views/Person/Delete.cshtml]
+[F:/Hoctap/DemoMVC/MvcMovie/Views/Person/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Hoctap/Newfolder/MvcMovie/Views/Person/Edit.cshtml]
+[F:/Hoctap/DemoMVC/MvcMovie/Views/Person/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Hoctap/Newfolder/MvcMovie/Views/Person/Index.cshtml]
+[F:/Hoctap/DemoMVC/MvcMovie/Views/Person/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Hoctap/Newfolder/MvcMovie/Views/Shared/Error.cshtml]
+[F:/Hoctap/DemoMVC/MvcMovie/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Hoctap/Newfolder/MvcMovie/Views/Shared/_ValidationScriptsPartial.cshtml]
+[F:/Hoctap/DemoMVC/MvcMovie/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Hoctap/Newfolder/MvcMovie/Views/_ViewImports.cshtml]
+[F:/Hoctap/DemoMVC/MvcMovie/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Hoctap/Newfolder/MvcMovie/Views/_ViewStart.cshtml]
+[F:/Hoctap/DemoMVC/MvcMovie/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Hoctap/Newfolder/MvcMovie/Views/Shared/_Layout.cshtml]
+[F:/Hoctap/DemoMVC/MvcMovie/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-0uvum7rpp4

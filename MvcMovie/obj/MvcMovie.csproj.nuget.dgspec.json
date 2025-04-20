@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Hoctap\\Newfolder\\MvcMovie\\MvcMovie.csproj": {}
+    "F:\\Hoctap\\DemoMVC\\MvcMovie\\MvcMovie.csproj": {}
   },
   "projects": {
-    "F:\\Hoctap\\Newfolder\\MvcMovie\\MvcMovie.csproj": {
+    "F:\\Hoctap\\DemoMVC\\MvcMovie\\MvcMovie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Hoctap\\Newfolder\\MvcMovie\\MvcMovie.csproj",
+        "projectUniqueName": "F:\\Hoctap\\DemoMVC\\MvcMovie\\MvcMovie.csproj",
         "projectName": "MvcMovie",
-        "projectPath": "F:\\Hoctap\\Newfolder\\MvcMovie\\MvcMovie.csproj",
+        "projectPath": "F:\\Hoctap\\DemoMVC\\MvcMovie\\MvcMovie.csproj",
         "packagesPath": "C:\\Users\\FPT\\.nuget\\packages\\",
-        "outputPath": "F:\\Hoctap\\Newfolder\\MvcMovie\\obj\\",
+        "outputPath": "F:\\Hoctap\\DemoMVC\\MvcMovie\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\FPT\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -44,6 +44,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[7.6.1, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -88,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.104/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
