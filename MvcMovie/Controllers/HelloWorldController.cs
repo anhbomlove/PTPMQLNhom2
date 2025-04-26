@@ -13,7 +13,8 @@ namespace MvcMovie.Controllers
 
         public string Welcome()
         {
-            return "Hello";
+            return "This is the Welcome action method...";
         }
     }
 }
+
