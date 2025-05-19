@@ -1,0 +1,21 @@
+@model MvcMovie.Models.Invoice
+@{
+    ViewData["Title"] = "Tính Tiền Hóa Đơn";
+}
+@if (ViewBag.InfoMessage != null)
+{
+    <h1>@ViewBag.InfoMessage</h1>
+}
+<form method="post" asp-action="Index">
+    <label>Nhập Số lượng:</label>
+    <input type="number" name="Quantity" value="@Model.Quantity" min="1" required>
+    <br />
+    <label>Nhập Đơn giá:</label>
+    <input type="number" step="0.1" name="UnitPrice" value="@Model.UnitPrice" min="0" required>
+    <br />
+    <input type="submit" value="Tính Tổng Tiền">
+</form>
+@if (Model != null && Model.TotalAmount > 0)
+{
+    <p>Tổng tiền hóa đơn của bạn là: @Model.TotalAmount VNĐ</p>
+}
